@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import { ComponentType } from "react";
 
 type ProductProps = {
   product_name: string;
