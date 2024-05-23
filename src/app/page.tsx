@@ -6,7 +6,7 @@ import { products } from "@/utils/products";
 export default function Home() {
   return (
     <div className="w-screen h-screen">
-      <header className="flex flex-row justify-between items-center h-1/6 px-16 py-4 w-full">
+      <header className="flex flex-row justify-between items-center h-1/6 p-8 lg:px-9 lg:py-4 w-full">
         <Header />
       </header>
       <main className="">
