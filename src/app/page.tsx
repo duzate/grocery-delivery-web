@@ -1,7 +1,6 @@
 import { Header } from "@/components/header";
 import { ListProducts } from "@/components/listProducts";
 import { categories } from "@/utils/categories";
-import { products } from "@/utils/products";
 
 export default function Home() {
   return (

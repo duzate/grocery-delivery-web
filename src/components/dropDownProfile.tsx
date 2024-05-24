@@ -1,6 +1,7 @@
 "use client";
 import { useAuth } from "@/contexts/Auth";
 import "@/components/dropDownProfile.css";
+
 export const DropDownProfile = () => {
   const { isAuth } = useAuth();
 
@@ -10,7 +11,7 @@ export const DropDownProfile = () => {
         <div>
           <ul>
             <li>
-              <a className="font-semibold hover:text-blue-500" href="">
+              <a className="font-semibold hover:text-blue-500" href="/login">
                 Entrar
               </a>{" "}
               ou{" "}
