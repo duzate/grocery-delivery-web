@@ -23,9 +23,9 @@ export const Product = ({
           key={product_img}
           src={product_img}
           alt={product_img}
-          objectFit="cover"
           width={1920}
           height={1080}
+          objectFit="cover"
         />
       </div>
       <div className="flex flex-col  justify-start text-sm w-full h-10 mb-2">
