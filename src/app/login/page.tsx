@@ -7,7 +7,7 @@ import z from "zod";
 
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
-import SupermarketLogo from "@/../public/supermarket_logo.png";
+import SupermarketLogo from "@/../public/supermarket.png";
 import { loginSchema } from "@/schema/loginSchema";
 
 export default function Login() {
@@ -53,7 +53,7 @@ export default function Login() {
               height={150}
             />
           </div>
-          <form onSubmit={handleSubmit} className='flex flex-col w-full px-8' action=''>
+          <form onSubmit={handleSubmit} className='flex flex-col w-full px-8' >
             <div className='flex flex-col w-full gap-4'>
               <div className='flex flex-col w-full gap-1'>
                 <label htmlFor='email' className='font-semibold text-gray-600'>
@@ -61,7 +61,7 @@ export default function Login() {
                 </label>
                 <input
                   className='border border-slate-300 rounded-md h-10 p-2 outline-none'
-                  type='email'
+                  type='text'
                   name='email'
                   id='email'
                   placeholder='email@example.com'
@@ -100,7 +100,7 @@ export default function Login() {
             <div className='flex w-full  mt-2 '>
               <Link
                 className='font-semibold text-xs text-indigo-500'
-                href='/create-account'>
+                href='/register'>
                 Cadastre-se
               </Link>
             </div>
