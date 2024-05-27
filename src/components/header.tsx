@@ -55,13 +55,13 @@ export const Header = () => {
             type='text'
           />
         </div>
-        <div className='flex w-full justify-center lg:justify-end gap-2 lg:gap-8 '>
+        <div className='flex w-full justify-end lg:justify-end gap-2 lg:gap-8 '>
           <div
             className='cursor-pointer'
             onClick={() => {
               setIsOpenProfile(!isOpenProfile);
             }}>
-            <AccountCircleIcon className='fill-gray-400 lg:size-10 size-8' />
+            <AccountCircleIcon className='fill-gray-400 size-10' />
           </div>
 
           <div
@@ -69,7 +69,7 @@ export const Header = () => {
             onClick={() => {
               setIsOpenCart(!isOpenCart);
             }}>
-            <ShoppingCartIcon className='fill-gray-400 lg:size-10 size-8' />
+            <ShoppingCartIcon className='fill-gray-400 size-10' />
           </div>
         </div>
         {isOpenProfile && (
@@ -83,7 +83,7 @@ export const Header = () => {
           </div>
         )}
       </div>
-      <div className='flex w-full justify-center  lg:hidden'>
+      <div className='flex w-full justify-center lg:hidden'>
         <div className=' flex justify-center items-center cursor-pointer border bg-gray-400 border-gray-400 w-12 h-12 rounded-s-md'>
           <SearchIcon
             style={{

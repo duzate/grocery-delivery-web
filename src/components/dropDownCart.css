@@ -1,8 +1,9 @@
 .dropDownCart {
   position: absolute;
+  background-color: white;
   top: 7rem;
-  right: 6rem;
-  width: 7rem;
+  right: 2.75rem;
+  width: 12rem;
   padding: 1rem;
   border-radius: 1rem;
   border: 1px solid gray;
@@ -18,4 +19,12 @@
   transform: rotate(45deg);
   border-left: 1px solid gray;
   border-top: 1px solid gray;
+}
+
+@media (min-width: 1024px) {
+  .dropDownProfile {
+    top: 10rem;
+    right: 3rem;
+    width: 12rem;
+  }
 }

@@ -1,6 +1,7 @@
 "use client";
 import { useAuth } from "@/contexts/Auth";
 import "@/components/dropDownProfile.css";
+import Link from "next/link";
 
 export const DropDownProfile = () => {
   const { isAuth } = useAuth();
@@ -11,20 +12,22 @@ export const DropDownProfile = () => {
         <div>
           <ul>
             <li>
-              <a className="font-semibold hover:text-blue-500" href="/login">
+              <Link className="font-semibold hover:text-blue-500" href="/login">
                 Entrar
-              </a>{" "}
+              </Link>{" "}
               ou{" "}
-              <a className="font-semibold hover:text-blue-500" href="">
+              <Link className="font-semibold hover:text-blue-500" href={'/register'} >
                 Cadastrar
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       ) : (
         <div>
-          <ul>
-            <li></li>
+          <ul className="flex flex-col gap-1">
+            <li>Meu perfil</li>
+            <li>Meus pedidos</li>
+            <li>Meus cupons</li>
           </ul>
         </div>
       )}
