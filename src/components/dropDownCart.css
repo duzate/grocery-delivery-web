@@ -1,7 +1,7 @@
 .dropDownCart {
   position: absolute;
   background-color: white;
-  top: 7rem;
+  top: 5.5rem;
   right: 2.75rem;
   width: 12rem;
   padding: 1rem;
@@ -22,8 +22,8 @@
 }
 
 @media (min-width: 1024px) {
-  .dropDownProfile {
-    top: 10rem;
+  .dropDownCart {
+    top: 7rem;
     right: 3rem;
     width: 12rem;
   }

@@ -5,7 +5,7 @@ import { categories } from "@/utils/categories";
 export default function Home() {
   return (
     <div className='w-screen h-screen px-9'>
-      <header className='flex flex-row justify-between items-center h-1/4 w-full'>
+      <header className='flex flex-row justify-between items-center h-40 w-full'>
         <Header />
       </header>
       <main className=''>

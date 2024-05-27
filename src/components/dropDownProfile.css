@@ -1,7 +1,7 @@
 .dropDownProfile {
   position: absolute;
   background-color: white;
-  top: 7rem;
+  top: 5.5rem;
   right: 5.5rem;
   width: 12rem;
   padding: 1rem;
@@ -26,8 +26,8 @@
 
 @media (min-width: 1024px) {
   .dropDownProfile {
-    top: 10rem;
-    right: 6.9rem;
+    top: 7rem;
+    right: 6.75rem;
     width: 12rem;
   }
 }

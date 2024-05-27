@@ -61,7 +61,7 @@ export const Header = () => {
             onClick={() => {
               setIsOpenProfile(!isOpenProfile);
             }}>
-            <AccountCircleIcon className='fill-gray-400 size-10' />
+            <AccountCircleIcon style={{ fontSize: "2.5rem", color: "#b3b3b3" }} />
           </div>
 
           <div
@@ -69,7 +69,7 @@ export const Header = () => {
             onClick={() => {
               setIsOpenCart(!isOpenCart);
             }}>
-            <ShoppingCartIcon className='fill-gray-400 size-10' />
+            <ShoppingCartIcon style={{ fontSize: "2.5rem", color: "#b3b3b3" }} />
           </div>
         </div>
         {isOpenProfile && (
