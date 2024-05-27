@@ -50,10 +50,10 @@ export default function Register() {
   return (
     <div className='flex flex-col h-screen w-screen'>
       <div className='flex justify-center items-center w-full h-full'>
-        <div className='flex flex-col justify-center items-center md:w-2/3 lg:w-2/5  border border-slate-300 rounded-md shadow-lg '>
+        <div className='flex flex-col justify-center items-center md:w-2/3 lg:w-2/5 w-11/12 border border-slate-300 rounded-md shadow-lg '>
           <div className='flex w-full justify-center items-center mx-10 my-5'>
             <Image
-              className='lg:w-1/4 lg:h-1/4 w-40 h-40 '
+              className='lg:w-1/4 lg:h-1/4 w-40 h-40'
               alt='Supermarket'
               src={SupermarketLogo}
               width={100}
@@ -61,7 +61,7 @@ export default function Register() {
               objectFit='fit'
             />
           </div>
-          <form onSubmit={handleSubmit} className='flex flex-col w-full px-8' action=''>
+          <form onSubmit={handleSubmit} className='flex flex-col w-full px-8' >
           <div className='flex flex-col w-full gap-1'>
                 <label htmlFor='name' className='font-semibold text-gray-600'>
                   Nome
@@ -117,7 +117,7 @@ export default function Register() {
                   </div>
                 </div>
                 {errors.password && (
-                  <span className='error text-xs text-red-500'>{errors.password}</span>
+                  <span className='error text-xs text-wrap text-red-500'>{errors.password}</span>
                 )}
               </div>
               <div className='flex flex-col w-full gap-1'>
@@ -142,7 +142,7 @@ export default function Register() {
                   </div>
                 </div>
                 {errors.confirmPassword && (
-                  <span className='error text-xs text-red-500'>{errors.confirmPassword}</span>
+                  <span className='error text-xs w-full text-red-500'>{errors.confirmPassword}</span>
                 )}
               </div>
             </div>

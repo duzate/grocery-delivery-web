@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 
-*::-webkit-scrollbar ::-ms-reveal{
+*::-webkit-scrollbar {
   display: none;
 }
 
+*::-ms-reveal {
+  display: none;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
